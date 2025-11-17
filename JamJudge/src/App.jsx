@@ -6,7 +6,11 @@ import ReviewCard from './components/ReviewCard'
 import Home from './components/Home'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import About from './components/About'
+import ChartPage from './components/Charts/ChartPage'
+import ReviewPage from './components/ReviewPage'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 
 
 function App() {
@@ -18,6 +22,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/ReviewCard" element={<ReviewCard />} />
+        <Route path="/About" element={<About />}/>
+        <Route path="/ChartPage" element={<ChartPage />}/>
+        <Route path="/ReviewPage" element={<ReviewPage />}/>
       </Routes>
       <Footer />
     </BrowserRouter>

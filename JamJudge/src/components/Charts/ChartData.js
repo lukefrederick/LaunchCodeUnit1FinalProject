@@ -50,7 +50,7 @@ const ChartData = [
     {
         albumName: "Twin Fantasy",
         artistName: "Car Seat Headrest",
-        releaseDate: 2917
+        releaseDate: 2017
     }
 ]
 

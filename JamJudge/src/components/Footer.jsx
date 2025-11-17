@@ -1,8 +1,9 @@
 
 function Footer() {
     return (
-        <div id="header">
-            <h1>Jam Judge</h1>
+        <div id="footer">
+            <h3>Jam Judge</h3>
+            <h3>©Luke Frederick</h3>
         </div>
     )
 }

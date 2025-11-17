@@ -1,6 +1,8 @@
+// THis is where state should be... -> state changes on submit
+
 function ReviewCard() {
     return (
-        <div id="header">
+        <div id="reviewBox">
             <h2>Write a review</h2>
             <form>
                 <label for="album">Album Title:</label>

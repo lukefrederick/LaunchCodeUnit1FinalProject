@@ -1,6 +1,7 @@
  import Header from './Header.jsx'
 import Footer from './Footer.jsx'
 
+
 function Home() {
     return (
         <>
@@ -20,7 +21,7 @@ function Home() {
             <h3>Read your reviews</h3>
             <b/>
             <p>
-            Check out the reviews that you've already submitted.
+            Read the reviews that you've already submitted.
             </p>
             <b/>
             <h3>Music Charts</h3>

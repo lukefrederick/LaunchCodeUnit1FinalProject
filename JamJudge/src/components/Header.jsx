@@ -4,7 +4,7 @@ import guitarPicture from '../assets/closeup-black-electric-guitar-dark-backgrou
 
 function Header() {
     return (
-        <div id="header">
+        <div class="header">
             <h1>Jam Judge</h1>
             <img id="guitarPicture" src={guitarPicture} alt="Black Electric Guitar"/>
 

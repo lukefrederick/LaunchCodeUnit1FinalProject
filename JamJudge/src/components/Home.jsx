@@ -1,10 +1,11 @@
  import Header from './Header.jsx'
 import Footer from './Footer.jsx'
-
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Home() {
     return (
-        <>
+        <div class="home">
             <h2>Welcome to JamJudge!</h2>
             <p id="home-paragraph">Welcome to JamJudge! Here you can pick out your favorite (or least favorite) music and 
                 submit your rating through our points system. You can provide a review in your own words
@@ -12,7 +13,7 @@ function Home() {
                 Start Jamming today!
             </p>
             <b/>
-            <h3>Write a Reivew</h3>
+            <Link id="headerLink" to="/ReviewCard">Write a Review</Link>
             <b/>
             <p>
             Write a review for the last album you listened to.
@@ -30,7 +31,7 @@ function Home() {
             Check out what others have been enjoying.
             </p>
 
-        </>
+        </div>
     )
 }
 

@@ -13,13 +13,13 @@ function Home() {
                 Start Jamming today!
             </p>
             <b/>
-            <Link id="headerLink" to="/ReviewCard">Write a Review</Link>
+            <Link id="homeLink" to="/ReviewCard">Write a Review</Link>
             <b/>
             <p>
             Write a review for the last album you listened to.
             </p>
             <b/>
-            <h3>Read your reviews</h3>
+            <Link id="homeLink" to="/ReviewPage">Read Your Reviews</Link>
             <b/>
             <p>
             Read the reviews that you've already submitted.

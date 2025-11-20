@@ -52,6 +52,8 @@ td, th {
     padding-top: 10%;
 }
 
+
+
 input[type=text] {
     border: 2px black;
     border-radius: 8px;
@@ -60,8 +62,19 @@ input[type=text] {
     margin: 10px;
 }
 
+input[type=textarea] {
+    width: 80%;
+    border: 2px black;
+    border-radius: 8px;
+    padding-top: 12px;
+    margin-left: 0px;
+    margin: 10px;
+
+}
+
 button {
-    background-color: white;
+    background-color: #36404A;
+    color: #FFFDD0;
     border-radius: 3px;
 }
 

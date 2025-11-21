@@ -1,10 +1,43 @@
+/* Media queries for 600px */
+
+@media (max-width: 600px) {
+    .header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .header h1 {
+        font-size: 2em;
+        margin: 0;
+        flex: 0 0 100%;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        margin-top: 0.25em;
+        margin-bottom: 0.5em;
+    }
+
+
+    #headerLink {
+        padding-right: 5%;
+        font-size: 0.9em;
+    }
+}
+
+/* Media queries for 768px */
+@media (max-width: 600px) {}
+
+
 body {
     background-color: #546373;
     color: #FFFDD0;
     font-family: 'Oxanium', sans-serif;
     padding-left: 20%;
     padding-right: 20%;
-    
+
 }
 
 h1 {
@@ -15,18 +48,41 @@ h2 {
     font-size: 3em;
 }
 
-#chart-table {
-    tr:nth-child(even) {background-color: #f2f2f252;}
+/* Photo row and uniform image sizing (used by PhotoCard) */
+.photo-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 16px;
 }
 
-td, th {
+.photo-item {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  display: block;
+}
+
+#chart-table {
+    tr:nth-child(even) {
+        background-color: #f2f2f252;
+    }
+}
+
+td,
+th {
     padding-bottom: 5%;
     width: 90%;
     font-size: x-large;
     text-align: left;
     vertical-align: center;
     padding: 10px;
-    tr:nth-child(even) {background-color: #f2f2f252;}
+
+    tr:nth-child(even) {
+        background-color: #f2f2f252;
+    }
 }
 
 
@@ -40,6 +96,14 @@ td, th {
 #headerLink {
     text-decoration: none;
     padding-right: 10%;
+}
+
+#homeLink {
+    text-decoration: none;
+}
+
+a:link {
+    color: #FFFDD0;
 }
 
 #guitarPicture {
@@ -79,15 +143,5 @@ button {
 }
 
 button:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
-}
-
-
-
-@media (min-width: 600px) {
-  .header {grid-area: 1 / span 6;}
-  .home {grid-area: 2 / span 1;}
-  .content {grid-area: 2 / span 4;}
-  .facts {grid-area: 3 / span 6;}
-  .footer {grid-area: 4 / span 6;}
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
 }

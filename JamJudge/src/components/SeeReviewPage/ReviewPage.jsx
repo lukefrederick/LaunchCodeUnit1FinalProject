@@ -2,7 +2,7 @@ import SubmittedReviewCard from "./SubmittedReviewCard"
 import submittedReviewContent from "./SubmittedReviewContent"
 import { useState } from 'react';
 
-// add functionality to sort by highest or lowest rating... and use states here - this will be conditional rendering
+// add functionality to sort by higRehest or lowest rating... and use states here - this will be conditional rendering
 function ReviewPage() {
 
     const [sort, setSort] = useState('descending');

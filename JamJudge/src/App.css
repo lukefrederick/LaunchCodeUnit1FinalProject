@@ -126,7 +126,7 @@ input[type=text] {
     margin: 10px;
 }
 
-input[type=textarea] {
+textarea {
     width: 80%;
     border: 2px black;
     border-radius: 8px;
@@ -144,4 +144,32 @@ button {
 
 button:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.form-label {
+  width: 140px;
+  margin-right: 12px;
+  text-align: right;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.form-control {
+  flex: 1;
+  min-width: 0;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+.form-control[rows] {
+  min-height: 100px;
+  resize: vertical;
 }

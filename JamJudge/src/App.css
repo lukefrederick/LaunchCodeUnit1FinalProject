@@ -28,7 +28,7 @@
 }
 
 /* Media queries for 768px */
-@media (max-width: 600px) {}
+@media (max-width: 768px) {}
 
 
 body {
@@ -106,17 +106,9 @@ a:link {
     color: #FFFDD0;
 }
 
-#guitarPicture {
-    height: 300px;
-    position: relative;
-    z-index: -1;
-}
-
 #footer {
     padding-top: 10%;
 }
-
-
 
 input[type=text] {
     border: 2px black;

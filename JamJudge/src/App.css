@@ -1,6 +1,12 @@
 /* Media queries for 600px */
 
 @media (max-width: 600px) {
+
+    body {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
     .header {
         display: flex;
         flex-wrap: wrap;
@@ -9,13 +15,12 @@
     }
 
     .header h1 {
-        font-size: 2em;
         margin: 0;
         flex: 0 0 100%;
     }
 
     h2 {
-        font-size: 1.5em;
+        font-size-adjust: 0.3;
         margin-top: 0.25em;
         margin-bottom: 0.5em;
     }
@@ -25,10 +30,93 @@
         padding-right: 5%;
         font-size: 0.9em;
     }
+
+    table {
+        overflow-x: auto;
+        font-size-adjust: 0.3;
+
+    }
+
+    th {
+        width: 100%;
+        border-color: black;
+        border: 1px;
+    }
+
+    td {
+        width: 100%;
+    }
+
+    .photo-row {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 1px;
+        margin-top: 4px;
+    }
+
+    .photo-item {
+        width: 16px;
+        height: 16px;
+        object-fit: cover;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        display: block;
+    }
+
+    .form-group {
+        align-items: left;
+        margin-bottom: 16px;
+    }
+
+    .form-label {
+        width: 40px;
+        margin-right: 10px;
+        text-align: left;
+        flex-shrink: 0;
+        font-size: 0.9em;
+    }
+
+    .form-control {
+        flex: 1;
+        min-width: 0;
+        padding: 6px 10px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        font-size: 0.9em;
+    }
+
+    .form-control[rows] {
+        min-height: 80px;
+        resize: vertical;
+    }
+
+    #reviewBox {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
 }
 
 /* Media queries for 768px */
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+    .photo-row {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 3px;
+        margin-top: 4px;
+    }
+
+    .photo-item {
+        width: 16px;
+        height: 16px;
+        object-fit: cover;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        display: block;
+    }
+
+
+}
 
 
 body {
@@ -48,21 +136,20 @@ h2 {
     font-size: 3em;
 }
 
-/* Photo row and uniform image sizing (used by PhotoCard) */
 .photo-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 16px;
 }
 
 .photo-item {
-  width: 160px;
-  height: 160px;
-  object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-  display: block;
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    display: block;
 }
 
 #chart-table {
@@ -138,30 +225,26 @@ button:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
 }
 
-.form-group {
-  display: flex;
-  align-items: center;
-  margin-bottom: 16px;
-}
+
 
 .form-label {
-  width: 140px;
-  margin-right: 12px;
-  text-align: right;
-  font-weight: 600;
-  flex-shrink: 0;
+    width: 140px;
+    margin-right: 12px;
+    text-align: right;
+    font-weight: 600;
+    flex-shrink: 0;
 }
 
 .form-control {
-  flex: 1;
-  min-width: 0;
-  padding: 8px 10px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  font-size: 1em;
+    flex: 1;
+    min-width: 0;
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1em;
 }
 
 .form-control[rows] {
-  min-height: 100px;
-  resize: vertical;
+    min-height: 100px;
+    resize: vertical;
 }

@@ -63,7 +63,7 @@ function ReviewCard() {
 
                 <div className="form-group">
                     <label htmlFor="review" className="form-label">Review:</label>
-                    <textarea className="form-control" id="review" name="review" rows="4" value={review} onChange={(event) => setReview(event.target.value)} required/>
+                    <textarea className="form-control" id="review"  maxLength ="2000" name="review" rows="4" value={review} onChange={(event) => setReview(event.target.value)} required/>
                 </div>
 
                 <div className="form-group">

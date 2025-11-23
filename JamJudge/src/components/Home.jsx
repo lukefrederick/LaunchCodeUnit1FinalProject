@@ -40,7 +40,7 @@ function Home() {
             Read the reviews that you've already submitted.
             </p>
             <b/>
-            <h3>Music Charts</h3>
+            <Link id="homeLink" to="/ChartPage">Music Charts</Link>
             <b/>
             <p>
             Check out what others have been enjoying.

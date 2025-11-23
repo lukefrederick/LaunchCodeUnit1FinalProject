@@ -4,7 +4,7 @@ function SubmittedReviewCard( { albumName, artistName, rating, reviewContent }) 
 
 
     return(
-        <div id="reviewCard">
+        <div className="reviewCard">
             <h2>Album: {albumName}</h2>
             <h3>Artist: {artistName}</h3>
             <h3>Rating: {rating}</h3>

@@ -36,12 +36,12 @@ function ReviewCard() {
             <form onSubmit={handleSubmit}>
                 <div className="form-group">
                     <label htmlFor="album" className="form-label">Album Title:</label>
-                    <input className="form-control" type="text" id="album" name="album" value={album} onChange={(event) => setAlbum(event.target.value)} required/>
+                    <input className="form-control" type="text" id="album" name="album" maxLength ="900" value={album} onChange={(event) => setAlbum(event.target.value)} required/>
                 </div>
 
                 <div className="form-group">
                     <label htmlFor="artist" className="form-label">Artist Name:</label>
-                    <input className="form-control" type="text" id="artist" name="artist" value={artist} onChange={(event) => setArtist(event.target.value)} required/>
+                    <input className="form-control" type="text" id="artist" name="artist" maxLength="100" value={artist} onChange={(event) => setArtist(event.target.value)} required/>
                 </div>
 
                 <div className="form-group">

@@ -19,6 +19,7 @@ function ReviewPage() {
 
             {sortedReviewContent.map((album) => (
                 <SubmittedReviewCard
+                    key={album.albumName}
                     albumName={album.albumName}
                     artistName={album.artistName}
                     rating={album.rating}

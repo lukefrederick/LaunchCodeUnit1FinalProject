@@ -48,9 +48,39 @@ const ChartData = [
         releaseDate: 2011
     },
     {
-        albumName: "Twin Fantasy",
-        artistName: "Car Seat Headrest",
-        releaseDate: 2017
+        albumName: "everything is alive",
+        artistName: "Slowdive",
+        releaseDate: 2023
+    },
+    {
+        albumName: "6 Feet Beneath The Moon",
+        artistName: "King Krule",
+        releaseDate: 2013
+    },
+    {
+        albumName: "Alien",
+        artistName: "Beach House",
+        releaseDate: 2018
+    },
+    {
+        albumName: "The New Abnormal",
+        artistName: "The Strokes",
+        releaseDate: 2020
+    },
+    {
+        albumName: "Racing Mount Pleasant",
+        artistName: "Racing Mount Pleasant",
+        releaseDate: 2025
+    },
+    {
+        albumName: "Manning Fireworks",
+        artistName: "MJ Lenderman",
+        releaseDate: 2024
+    },
+    {
+        albumName: "Alfredo 2",
+        artistName: "Freddie Gibbs, The Alchemist",
+        releaseDate: 2025
     }
 ]
 

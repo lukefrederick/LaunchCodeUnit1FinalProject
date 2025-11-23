@@ -1,10 +1,9 @@
 /* Media queries for 600px */
-
 @media (max-width: 600px) {
 
     body {
-        padding-left: 5%;
-        padding-right: 5%;
+        padding-left: 0%;
+        padding-right: 0%;
     }
 
     .header {
@@ -47,22 +46,6 @@
         width: 100%;
     }
 
-    .photo-row {
-        display: flex;
-        flex-wrap: nowrap;
-        gap: 1px;
-        margin-top: 4px;
-    }
-
-    .photo-item {
-        width: 16px;
-        height: 16px;
-        object-fit: cover;
-        border-radius: 8px;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-        display: block;
-    }
-
     .form-group {
         align-items: left;
         margin-bottom: 16px;
@@ -99,20 +82,81 @@
 
 /* Media queries for 768px */
 @media (max-width: 768px) {
-    .photo-row {
-        display: flex;
-        flex-wrap: nowrap;
-        gap: 3px;
-        margin-top: 4px;
+    body {
+        padding-left: 0%;
+        padding-right: 0%;
     }
 
-    .photo-item {
-        width: 16px;
-        height: 16px;
-        object-fit: cover;
-        border-radius: 8px;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-        display: block;
+    .header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .header h1 {
+        margin: 0;
+        flex: 0 0 100%;
+    }
+
+    h2 {
+        font-size-adjust: 0.3;
+        margin-top: 0.25em;
+        margin-bottom: 0.5em;
+    }
+
+
+    #headerLink {
+        padding-right: 5%;
+        font-size: 0.9em;
+    }
+
+    table {
+        overflow-x: auto;
+        font-size-adjust: 0.3;
+
+    }
+
+    th {
+        width: 100%;
+        border-color: black;
+        border: 1px;
+    }
+
+    td {
+        width: 100%;
+    }
+
+    .form-group {
+        align-items: left;
+        margin-bottom: 16px;
+    }
+
+    .form-label {
+        width: 40px;
+        margin-right: 10px;
+        text-align: left;
+        flex-shrink: 0;
+        font-size: 0.9em;
+    }
+
+    .form-control {
+        flex: 1;
+        min-width: 0;
+        padding: 6px 10px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        font-size: 0.9em;
+    }
+
+    .form-control[rows] {
+        min-height: 80px;
+        resize: vertical;
+    }
+
+    #reviewBox {
+        margin-left: 0%;
+        margin-right: 0%;
     }
 
 
@@ -138,18 +182,25 @@ h2 {
 
 .photo-row {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 12px;
     margin-top: 16px;
+    margin-bottom: 16px;
+    width: 100%;
+    max-width: clamp(1000px, 15vw, 180px);
 }
 
 .photo-item {
-    width: 160px;
-    height: 160px;
+    width: clamp(40px, 15vw, 180px);
+    height: clamp(40px, 15vw, 180px);
     object-fit: cover;
     border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    display: block;
+    display: inline-block;
+}
+
+.photo-div {
+    flex-wrap: nowrap;
+    display: inline-block;
 }
 
 #chart-table {
@@ -158,8 +209,7 @@ h2 {
     }
 }
 
-td,
-th {
+td, th {
     padding-bottom: 5%;
     width: 90%;
     font-size: x-large;
@@ -173,9 +223,10 @@ th {
 }
 
 
-#reviewCard {
-    background-color: #6D8196;
-    padding: 10px;
+.reviewCard {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    
     border-radius: 15px;
     border-color: #FFFDD0;
 }

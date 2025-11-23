@@ -24,6 +24,7 @@ function ReviewPage() {
                     rating={album.rating}
                     reviewContent={album.reviewContent}
                 />
+                
             ))}
         </div>
     )

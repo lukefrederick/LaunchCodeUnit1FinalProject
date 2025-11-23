@@ -5,8 +5,6 @@ function Header() {
     return (
         <div className="header">
             <h1>Jam Judge</h1>
-            {/* <img id="guitarPicture" src={guitarPicture} alt="Black Electric Guitar"/> */}
-
             <Link id="headerLink" to="/">Home</Link>
             <Link id="headerLink" to="/About">About</Link>
             <Link id="headerLink" to="/ReviewCard">Review</Link>

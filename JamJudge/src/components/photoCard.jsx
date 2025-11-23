@@ -1,6 +1,8 @@
 function PhotoCard({ src, alt }) {
     return (
-        <img className="photo-item" src={src} alt={alt} />
+        <div className="photo-div">
+            <img className="photo-item" src={src} alt={alt} />
+        </div>
     );
 }
 

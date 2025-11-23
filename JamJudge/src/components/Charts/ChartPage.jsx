@@ -19,7 +19,7 @@ function ChartPage() {
                 <tbody>
                     {ChartData.map((album) => (
                         <tr key={album.albumName}>
-                            <td>{album.albumName}</td>
+                            <td><a href={album.link} target="_blank">{album.albumName}</a></td>
                             <td>{album.artistName}</td>
                             <td>{album.releaseDate}</td>
                         </tr>

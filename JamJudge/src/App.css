@@ -1,9 +1,10 @@
 /* Media queries for 600px */
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
 
     body {
-        padding-left: 0%;
-        padding-right: 0%;
+        padding-left: 5%;
+        padding-right: 5%;
+        font-size: 14px
     }
 
     .header {
@@ -32,7 +33,7 @@
 
     table {
         overflow-x: auto;
-        font-size-adjust: 0.3;
+        font-size-adjust: 0.2;
 
     }
 
@@ -81,7 +82,7 @@
 }
 
 /* Media queries for 768px */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     body {
         padding-left: 0%;
         padding-right: 0%;
@@ -126,40 +127,6 @@
     td {
         width: 100%;
     }
-
-    .form-group {
-        align-items: left;
-        margin-bottom: 16px;
-    }
-
-    .form-label {
-        width: 40px;
-        margin-right: 10px;
-        text-align: left;
-        flex-shrink: 0;
-        font-size: 0.9em;
-    }
-
-    .form-control {
-        flex: 1;
-        min-width: 0;
-        padding: 6px 10px;
-        border-radius: 6px;
-        border: 1px solid #ccc;
-        font-size: 0.9em;
-    }
-
-    .form-control[rows] {
-        min-height: 80px;
-        resize: vertical;
-    }
-
-    #reviewBox {
-        margin-left: 0%;
-        margin-right: 0%;
-    }
-
-
 }
 
 
@@ -167,8 +134,8 @@ body {
     background-color: #546373;
     color: #FFFDD0;
     font-family: 'Oxanium', sans-serif;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
 
 }
 
@@ -207,6 +174,8 @@ h2 {
     tr:nth-child(even) {
         background-color: #f2f2f252;
     }
+    padding-left: 1%;
+    padding-right: 0%;
 }
 
 td, th {

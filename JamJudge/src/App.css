@@ -1,85 +1,4 @@
-/* Media queries for 600px */
-@media screen and (max-width: 600px) {
 
-    body {
-        padding-left: 5%;
-        padding-right: 5%;
-        font-size: 14px
-    }
-
-    .header {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        gap: 8px;
-    }
-
-    .header h1 {
-        margin: 0;
-        flex: 0 0 100%;
-    }
-
-    h2 {
-        font-size-adjust: 0.3;
-        margin-top: 0.25em;
-        margin-bottom: 0.5em;
-    }
-
-
-    #headerLink {
-        padding-right: 5%;
-        font-size: 0.9em;
-    }
-
-    table {
-        overflow-x: auto;
-        font-size-adjust: 0.2;
-
-    }
-
-    th {
-        width: 100%;
-        border-color: black;
-        border: 1px;
-    }
-
-    td {
-        width: 100%;
-    }
-
-    .form-group {
-        align-items: left;
-        margin-bottom: 16px;
-    }
-
-    .form-label {
-        width: 40px;
-        margin-right: 10px;
-        text-align: left;
-        flex-shrink: 0;
-        font-size: 0.9em;
-    }
-
-    .form-control {
-        flex: 1;
-        min-width: 0;
-        padding: 6px 10px;
-        border-radius: 6px;
-        border: 1px solid #ccc;
-        font-size: 0.9em;
-    }
-
-    .form-control[rows] {
-        min-height: 80px;
-        resize: vertical;
-    }
-
-    #reviewBox {
-        margin-left: 0%;
-        margin-right: 0%;
-    }
-
-}
 
 /* Media queries for 768px */
 @media screen and (max-width: 768px) {
@@ -279,4 +198,134 @@ button:hover {
 .form-control[rows] {
     min-height: 100px;
     resize: vertical;
+}
+
+/* Media queries for 600px */
+@media screen and (max-width: 600px) {
+
+    body {
+        padding-left: 0;
+        font-size: 14px;
+        overflow-x: hidden;
+    }
+
+    .header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .header h1 {
+        margin: 0;
+        flex: 0 0 100%;
+    }
+
+    h2 {
+        font-size-adjust: 0.3;
+        margin-top: 0.25em;
+        margin-bottom: 0.5em;
+    }
+
+
+    #headerLink {
+        padding-right: 5%;
+        font-size: 0.9em;
+    }
+
+    table {
+        overflow-x: auto;
+        font-size-adjust: 0.2;
+
+    }
+
+    th {
+        width: 100%;
+        border-color: black;
+        border: 1px;
+    }
+
+    td {
+        width: 100%;
+    }
+
+    .form-group {
+        align-items: left;
+        margin-bottom: 16px;
+    }
+
+    .form-label {
+        width: 40px;
+        margin-right: 10px;
+        text-align: left;
+        flex-shrink: 0;
+        font-size: 0.9em;
+    }
+
+    .form-control {
+        flex: 1;
+        min-width: 0;
+        padding: 6px 10px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        font-size: 0.9em;
+    }
+
+    .form-control[rows] {
+        min-height: 80px;
+        resize: vertical;
+    }
+
+    #reviewBox {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+}
+
+
+
+/* Media queries for 768px */
+@media screen and (max-width: 768px) {
+    body {
+        padding-left: 0%;
+        font-size: 12px;
+        overflow-x: hidden;
+    }
+
+    .header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .header h1 {
+        margin: 0;
+        flex: 0 0 100%;
+    }
+
+    h2 {
+        font-size-adjust: 0.3;
+        margin-top: 0.25em;
+        margin-bottom: 0.5em;
+    }
+
+
+   
+    table {
+        overflow-x: auto;
+        font-size-adjust: 0.3;
+
+    }
+
+    th {
+        width: 100%;
+        border-color: black;
+        border: 1px;
+    }
+
+    td {
+        width: 100%;
+    }
 }

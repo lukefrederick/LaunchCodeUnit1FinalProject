@@ -7,7 +7,7 @@ function ReviewCard() {
     const [rating, setRating] = useState('');
     const [review, setReview] = useState('');
 
-    
+    // State used here to control the input variables and state is cleared on submit
     const handleSubmit = (event) => {
         event.preventDefault();
 

@@ -174,11 +174,13 @@ h2 {
     tr:nth-child(even) {
         background-color: #f2f2f252;
     }
+
     padding-left: 1%;
     padding-right: 0%;
 }
 
-td, th {
+td,
+th {
     padding-bottom: 5%;
     width: 90%;
     font-size: x-large;
@@ -195,22 +197,32 @@ td, th {
 .reviewCard {
     padding-bottom: 10px;
     padding-top: 10px;
-    
+
     border-radius: 15px;
     border-color: #FFFDD0;
 }
 
-#headerLink {
+.headerLink {
+    color: #E97451;
     text-decoration: none;
     padding-right: 10%;
+    font-weight: bold;
+    
 }
 
-#homeLink {
+.headerLinks {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.homeLink {
+    color: #E97451;
     text-decoration: none;
 }
 
 a:link {
     color: #FFFDD0;
+    text-decoration: none;
 }
 
 #footer {

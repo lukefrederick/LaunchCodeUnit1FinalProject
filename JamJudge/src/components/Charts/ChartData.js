@@ -1,5 +1,6 @@
 // This is for the chart data...
 // You can probably tell I'm a loser based on my music taste
+
 const ChartData = [
 
     {

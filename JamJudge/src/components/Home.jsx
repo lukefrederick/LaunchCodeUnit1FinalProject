@@ -23,24 +23,24 @@ function Home() {
 
             <div className="photo-row">
                 {photos.map((src, idx) => (
-                    <PhotoCard key={idx} src={src} alt={idx} />
+                    <PhotoCard key={idx} src={src} alt={src} />
                 ))}
             </div>
 
             <b/>
-            <Link id="homeLink" to="/ReviewCard">Write a Review</Link>
+            <Link className="homeLink" to="/ReviewCard">Write a Review</Link>
             <b/>
             <p>
             Write a review for the last album you listened to.
             </p>
             <b/>
-            <Link id="homeLink" to="/ReviewPage">Read Your Reviews</Link>
+            <Link className="homeLink" to="/ReviewPage">Read Your Reviews</Link>
             <b/>
             <p>
             Read the reviews that you've already submitted.
             </p>
             <b/>
-            <Link id="homeLink" to="/ChartPage">Music Charts</Link>
+            <Link className="homeLink" to="/ChartPage">Music Charts</Link>
             <b/>
             <p>
             Check out what others have been enjoying.

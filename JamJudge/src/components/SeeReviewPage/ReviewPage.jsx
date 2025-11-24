@@ -2,7 +2,7 @@ import SubmittedReviewCard from "./SubmittedReviewCard"
 import submittedReviewContent from "./SubmittedReviewContent"
 import { useState } from 'react';
 
-// add functionality to sort by higRehest or lowest rating... and use states here - this will be conditional rendering
+// Conditional rendering used here so that the user may switch between lowest and highest rated albums
 function ReviewPage() {
 
     const [sort, setSort] = useState('descending');

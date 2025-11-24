@@ -1,16 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+// Navbar
 function Header() {
     return (
-        <div className="header">
+        <>
             <h1>Jam Judge</h1>
-            <Link id="headerLink" to="/">Home</Link>
-            <Link id="headerLink" to="/About">About</Link>
-            <Link id="headerLink" to="/ReviewCard">Review</Link>
-            <Link id="headerLink" to="/ChartPage">Charts</Link>
-            <Link id="headerLink" to="/ReviewPage">Your Reviews</Link>
-        </div>
+            <div className="headerLinks">
+                
+                <Link className="headerLink" to="/">Home</Link>
+                <Link className="headerLink" to="/About">About</Link>
+                <Link className="headerLink" to="/ReviewCard">Review</Link>
+                <Link className="headerLink" to="/ChartPage">Charts</Link>
+                <Link className="headerLink" to="/ReviewPage">Your Reviews</Link>
+            </div>
+        </>
     )
 }
 

@@ -11,11 +11,9 @@ import ChartPage from './components/Charts/ChartPage'
 import ReviewPage from './components/SeeReviewPage/ReviewPage'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-
-
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -25,7 +23,7 @@ function App() {
         <Route path="/ReviewPage" element={<ReviewPage />}/>
       </Routes>
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 

@@ -9,7 +9,7 @@ import Footer from './components/Footer'
 import About from './components/About'
 import ChartPage from './components/Charts/ChartPage'
 import ReviewPage from './components/SeeReviewPage/ReviewPage'
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
